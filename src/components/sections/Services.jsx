@@ -1,0 +1,87 @@
+import { motion } from "framer-motion";
+
+const services = [
+  {
+    title: "Bridal Makeup",
+    description:
+      "A complete bridal makeup look designed to enhance your natural beauty and last throughout your special day.",
+    price: "Starting from ₹XXXX",
+  },
+  {
+    title: "Party Makeup",
+    description:
+      "Soft, elegant or glam makeup looks perfect for parties, events and celebrations.",
+    price: "Starting from ₹XXXX",
+  },
+  {
+    title: "Engagement / Reception",
+    description:
+      "Customized makeup styles tailored to your outfit, lighting and event theme.",
+    price: "Starting from ₹XXXX",
+  },
+  {
+    title: "Trial Makeup",
+    description:
+      "A trial session to finalize your bridal look and ensure complete confidence before the big day.",
+    price: "Available on request",
+  },
+];
+
+const Services = () => {
+  return (
+    <section className="py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* SECTION HEADING */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="mb-16 text-center"
+        >
+          <h2 className="text-3xl md:text-4xl font-light">
+            Makeup <span className="font-semibold">Services</span>
+          </h2>
+          <p className="mt-4 text-gray-500 max-w-xl mx-auto">
+            Professional makeup services crafted to make you feel confident,
+            elegant and camera-ready for every occasion.
+          </p>
+        </motion.div>
+
+        {/* SERVICES GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+          {services.map((service, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: index * 0.1,
+              }}
+              className="p-10 rounded-3xl border border-gray-200 hover:border-gray-300 transition"
+            >
+              <h3 className="text-xl font-medium mb-4">
+                {service.title}
+              </h3>
+
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {service.description}
+              </p>
+
+              <span className="text-sm text-gray-500">
+                {service.price}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Services;
