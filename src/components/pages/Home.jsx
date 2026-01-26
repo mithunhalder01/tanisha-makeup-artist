@@ -6,7 +6,6 @@ import About from "../sections/About";
 import Testimonials from "../sections/Testimonials";
 import Contact from "../sections/Contact";
 import Footer from "../common/Footer";
-import StatsSection from "../sections/StatsSection";
 import ReelsSection from "../sections/ReelsSection";
 import Appointment from "../sections/Appointment";
 
@@ -15,7 +14,6 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
-      <StatsSection />
       <About />
       <Services />
       
