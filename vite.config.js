@@ -4,7 +4,8 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Tanisha-Makeup-Artist/", // 🔥 MUST MATCH REPO NAME EXACTLY
+  base: process.env.DEPLOY_TARGET === "gh" ? "/Tanisha-Makeup-Artist/" : "/",
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
