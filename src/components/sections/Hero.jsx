@@ -110,7 +110,7 @@ const Hero = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/917827888273"
               className="px-7 py-3 bg-black text-white rounded-full
                          text-sm hover:bg-gray-800 transition text-center"
             >

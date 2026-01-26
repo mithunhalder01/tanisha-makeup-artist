@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import profileImg from "../../assets/images/profile.jpg";
+import profileImg from "../../assets/images/Profile.jpg";
+
 
 const socials = [
   {
