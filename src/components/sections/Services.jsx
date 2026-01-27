@@ -1,29 +1,40 @@
 import { motion } from "framer-motion";
 
+// 4:3 portrait images
+import bridalImg from "/public/images/makeup1.png";
+import partyImg from "/public/images/makeup2.png";
+import engagementImg from "/public/images/makeup3.jpg";
+import trialImg from "/public/images/makeup4.jpg";
+
 const services = [
   {
     title: "Bridal Makeup",
     description:
       "A complete bridal makeup look designed to enhance your natural beauty and last throughout your special day.",
-    price: "Starting from ₹XXXX",
+    price: "Starting from ₹ 15999/-",
+    image: bridalImg,
   },
   {
     title: "Party Makeup",
     description:
       "Soft, elegant or glam makeup looks perfect for parties, events and celebrations.",
-    price: "Starting from ₹XXXX",
+    price: "Starting from ₹ 2499/-",
+    image: partyImg,
   },
   {
     title: "Engagement / Reception",
     description:
       "Customized makeup styles tailored to your outfit, lighting and event theme.",
-    price: "Starting from ₹XXXX",
+    price: "Starting from ₹ 10999/-",
+    image: engagementImg,
   },
   {
     title: "Trial Makeup",
     description:
       "A trial session to finalize your bridal look and ensure complete confidence before the big day.",
     price: "Available on request",
+    image: trialImg,
+
   },
 ];
 
@@ -64,17 +75,30 @@ const Services = () => {
               }}
               className="p-10 rounded-3xl border border-gray-200 hover:border-gray-300 transition"
             >
-              <h3 className="text-xl font-medium mb-4">
-                {service.title}
-              </h3>
+              {/* IMAGE ON TOP */}
+              <div className="mb-8 aspect-[3/4] rounded-3xl overflow-hidden bg-gray-100">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-              <p className="text-gray-600 mb-6 leading-relaxed">
-                {service.description}
-              </p>
+              {/* CONTENT BELOW (UNCHANGED DESIGN) */}
+              <div>
+                <h3 className="text-xl font-medium mb-4">
+                  {service.title}
+                </h3>
 
-              <span className="text-sm text-gray-500">
-                {service.price}
-              </span>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {service.description}
+                </p>
+
+                <span className="text-sm text-gray-500">
+                  {service.price}
+                </span>
+              </div>
+
             </motion.div>
           ))}
         </div>
