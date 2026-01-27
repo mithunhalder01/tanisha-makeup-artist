@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 // 4:3 portrait images
-import bridalImg from "/public/images/makeup1.png";
-import partyImg from "/public/images/makeup2.png";
-import engagementImg from "/public/images/makeup3.jpg";
-import trialImg from "/public/images/makeup4.jpg";
+import bridalImg from "../../assets/images/makeup1.PNG";
+import partyImg from "../../assets/images/makeup2.PNG";
+import engagementImg from "../../assets/images/makeup3.jpg";
+import trialImg from "../../assets/images/makeup4.jpg";
 
 const services = [
   {
