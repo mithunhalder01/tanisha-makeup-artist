@@ -1,10 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import heroS1 from "@/assets/images/heroS1.PNG";
-import heroS2 from "@/assets/images/heroS2.jpg";
-import heroS3 from "@/assets/images/heroS3.jpg";
-import heroS4 from "@/assets/images/heroS4.PNG";
+import heroS1 from "@/assets/images/heroS1.webp";
+import heroS2 from "@/assets/images/heroS2.webp";
+import heroS3 from "@/assets/images/heroS3.webp";
+import heroS4 from "@/assets/images/heroS4.webp";
 
 const images = [heroS1, heroS2, heroS3, heroS4];
 

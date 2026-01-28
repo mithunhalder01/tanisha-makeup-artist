@@ -5,12 +5,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const images = [
-  "/images/makeup1.PNG",
-  "/images/makeup2.PNG",
-  "/images/makeup3.jpg",
+  "/images/makeup1.webp",
+  "/images/makeup2.webp",
+  "/images/makeup3.webp",
   "/images/makeup4.jpg",
-  "/images/makeup5.jpg",
-  "/images/makeup6.jpg",
+  "/images/makeup5.webp",
+  "/images/makeup6.webp",
 ];
 
 const Portfolio = () => {
