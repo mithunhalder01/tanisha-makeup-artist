@@ -7,7 +7,7 @@ const Footer = () => {
 
         {/* BRAND INFO */}
         <div>
-          <h3 className="text-lg font-semibold">
+          <h3 className="text-lg font-semibold" style={{ color: '#EFBF04' }}>
             Tanisha <span className="font-light">MakeupArtist</span>
           </h3>
           <p className="mt-4 text-sm text-gray-500 leading-relaxed">

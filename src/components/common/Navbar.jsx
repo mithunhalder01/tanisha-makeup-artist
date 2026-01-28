@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
         {/* LOGO / BRAND */}
-        <h1 className="text-lg font-semibold tracking-wide">
+        <h1 className="text-lg font-semibold tracking-wide " style={{ color: '#EFBF04' }}>
           Tanisha <span className="font-light">MakeupArtist</span>
         </h1>
 
